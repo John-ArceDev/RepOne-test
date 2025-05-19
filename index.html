@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishop replic</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+    }
+
+    .Noticia {
+      background-color: hwb(27 22% 3%);
+      text-align: center;
+      height: 30px;
+      margin: 0;
+      line-height: 30px;
+    }
+
+    .Productos {
+      background-color: indigo;
+      padding: 20px 0;
+    }
+
+    .contenido-productos {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 30px; /* Espacio entre los elementos */
+    }
+
+    .form-control {
+      flex: 1; /* hace que el input crezca para ocupar espacio */
+    }
+
+    .Dispositivo {
+      align-items: center;
+      display: flex;
+      justify-content: center; /* Centra los spans horizontalmente */
+      gap: 60px;
+      background-color: khaki;
+      padding: 10px; /*margen del contenedor */ 
+    }
+
+    .carrucel1{
+      /* w auto hace uso del tamaño de la imagen sin cambiarlo */ 
+      background-color: hsl(155, 80%, 45%);
+      padding: 20px 0;
+      display: flex;
+      justify-content: center;
+    }
+    .productos_especificos {
+      background-color: indigo;
+    }
+
+    .h1productos{
+      background-color: indianred;
+      padding: 20px;
+      margin-left: 300px;
+    }
+
+    .fotos{
+      margin-left: 60px;
+      gap:80px;
+      display: flex;
+
+    }
+    .Novedades{
+      background-color: #1c25c9;
+      margin-left: 300px;
+    }
+    
+
+  </style>
+</head>
+<body>
+
+  <div class="Noticia">
+    Ya llegó un nuevo iPhone 16e
+  </div>
+
+  <header class="Productos">
+    <div class="contenido-productos">
+      <img src="imgs/logo1.webp" alt="LOGO" height="50" width="100">
+      <img src="imgs/Parner.jpeg" alt="Parner" height="50" width="100">
+      <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
+      <button class="btn btn-outline-light" type="submit">Search</button>
+      <h7>Ishop</h5>
+        <h8>Colombia</h8>
+    </div>
+
+    <div class="Dispositivo">
+      <span>
+        Mac
+      </span>
+      <span>
+        ipad
+      </span>
+      <span>
+        iPhone
+      </span>
+      <span>
+        Watch
+      </span>
+      <span>
+        Airpods
+      </span>
+      <span>
+        Apple TV
+      </span>
+      <span>
+        Acessories
+      </span>
+  
+    </div>
+  </header>
+  <div class="carrucel1">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/carrucel1.jpeg" class="d-block w-auto" alt="..."> 
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/carrucel2.jpeg" class="d-block w-auto" alt="..."> 
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/carrucel3.jpeg" class="d-block w-auto" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="productos_especificos">
+    <div class="h1productos">
+      <h3 style="padding: 20px;">Ver todos los productos de Apple. </h3>
+      <div class="fotos">
+        <div style="text-align: center;">
+          <img src="imgs/card1.png" alt="">
+          <div>Mac</div>
+          <div>Desde $3.399.000</div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card2.png" alt="">
+          <div>Iphone</div>
+          <div>Desde 2.600.000 </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card3.png" alt="">
+          <div>iPad</div>
+          <div>Desde 1.650.000 </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card4.png" alt="">
+          <div>Watch</div>
+          <div>Desde 1.470.000 </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card5.png" alt="">
+          <div>Sonido</div>
+          <div>Desde 139.000 </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card6.jpeg" alt="">
+          <div>TV y Hogar</div>
+          <div>Desde 809.000 </div>
+        </div>
+        <div style="text-align: center;">
+          <img src="imgs/card7.png" alt="">
+          <div>Accesorios</div>
+          <div>Desde 119.000 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Novedades" style="margin-top: 30px;">
+    <h2>Echa un vistazo a las novedades.</h2>
+  </div>
+</body>
+</html>
